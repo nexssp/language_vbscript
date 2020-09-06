@@ -10,11 +10,10 @@ languageConfig.builders = {};
 languageConfig.compilers = {
   vbs: {
     install: "installed",
-    // Cpp does not have possibility to compile and run on the fly. We need to save it as a exe file first.
-    command: "cscript //Nologo",
-    args: "<file>",
-    help: ``
-  }
+    command: "cscript",
+    args: "//Nologo <file>",
+    help: ``,
+  },
 };
 languageConfig.errors = require("./nexss.vbscript.errors");
 languageConfig.languagePackageManagers = {};
